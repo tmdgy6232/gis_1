@@ -6,4 +6,7 @@ from accountapp.models import HelloWorld
 
 
 def helloworld(request):
-    return render(request, 'accountapp/hello_world.html')
+    if request.method == "POST":
+        return render(request, 'accountapp/hello_world.html', context={'text' : 'PostMethod'})
+    else:
+        return render(request, 'accountapp/hello_world.html', context={'text' : 'getMethod'})
