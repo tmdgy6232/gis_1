@@ -13,7 +13,9 @@ def helloworld(request):
         helloWorldInstance = HelloWorld()
         helloWorldInstance.text = temp
         helloWorldInstance.save()
+
         hello_world_list = HelloWorld.objects.all()
+
         return render(request, 'accountapp/hello_world.html', context={'hello_world_list' : hello_world_list})
     else:
         hello_world_list = HelloWorld.objects.all()
