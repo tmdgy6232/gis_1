@@ -36,6 +36,19 @@
     padding : .2rem
 }
 
-.round_button:hover{
+.round_button:hover {
     color: dimgray;
+}
+
+.article_image {
+    border-radius: 2rem;
+    width : 70%;
+    box-shadow: 0 0 .5rem grey;
+}
+
+.article_content {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 2rem;
+
 }
