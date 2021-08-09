@@ -33,6 +33,9 @@
 <script src="{% static 'js/magicgrid.js' %}">
 
 </script>
+
+{% include 'snippets/pagenation.html' %}
+
 <div class="text-center">
     <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill material-icons">
         brush
